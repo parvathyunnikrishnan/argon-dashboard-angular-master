@@ -1,0 +1,64 @@
+.main-content .container-fluid,
+.main-content .container-sm,
+.main-content .container-md,
+.main-content .container-lg,
+.main-content .container-xl {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+.row {
+    flex-wrap: unset;
+    width: 82%;
+}
+
+.text-muted {
+    font-size: 12px;
+    width: 106px;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.card {
+    height: 66px;
+}
+
+.alg {
+    display: flex;
+    /* background: lightblue;*/
+    justify-content: space-between;
+    width: 65%;
+    height: 120px;
+    /*margin: auto;*/
+    margin-left: 55px;
+}
+
+#card-alg {
+    top: 20px;
+    width: 200px;
+}
+
+#tp-alg {
+    margin-top: -4rem !important;
+}
+
+#card-header-alg {
+    padding: 4rem 1.5rem;
+    background-color: #5e72e4;
+    border-radius: 3px;
+}
+
+#col-cd-al {
+    bottom: 120px;
+}
+
+.text-xl-left {
+    top: 120px;
+}
+
+#cd-sh-st {
+    margin-left: 190px;
+}
