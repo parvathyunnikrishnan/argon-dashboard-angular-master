@@ -3,3 +3,16 @@
 .footer .copyright {
     display: none !important;
 }
+
+.main-content .navbar-top {
+    display: none;
+}
+
+.navbar-vertical .navbar-brand-img,
+.navbar-vertical .navbar-brand>img {
+    display: none;
+}
+
+.table thead th {
+    font-size: 0.85rem !important;
+}
