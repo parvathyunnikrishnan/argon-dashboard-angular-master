@@ -18,6 +18,7 @@ import { DietaryCategoriesComponent } from '../../pages/dietary-categories/dieta
 import { ConfigurationsComponent } from '../../pages/configurations/configurations.component';
 import { AllergensComponent } from '../../pages/allergens/allergens.component';
 
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // import { ToastrModule } from 'ngx-toastr';
 
@@ -28,7 +29,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     HttpClientModule,
     NgbModule,
-    ClipboardModule
+    ClipboardModule,
+    ReactiveFormsModule
   ],
   declarations: [
     AdminComponent,

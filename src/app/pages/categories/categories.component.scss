@@ -1,23 +1,9 @@
-/*.alg-tbl {}
-
-table {
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 75px;
+.fortextbox {
+    width: 234px;
+    height: 45px;
 }
 
-table,
-td,
-th {
-    border: 1px solid grey;
+.card-header {
+    display: flex;
+    justify-content: space-between;
 }
-
-th {
-    text-align: center !important;
-}
-
-
-/*td {
-    position: relative;
-    left: 34px;
-}*/
