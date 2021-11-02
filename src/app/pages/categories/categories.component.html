@@ -9,7 +9,7 @@
     <!-- Table -->
     <div class="row">
         <div class="col">
-            <div class="card shadow">
+            <div class="card bg-secondary shadow">
                 <div class="card-header border-0">
                     <h3 class="mb-0">Categories</h3>
                     <span (click)="triggerModal(modalData)">Add </span>
@@ -23,14 +23,24 @@
                       </button>
                     </div>
                     <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+                        <div class="form-group">
+                            <div class=" input-group-alternative">
+                                <input type="text" class="form-control" name="categoryName" placeholder="Category Name" formControlName="categoryName">
 
-                        <input type="text" class="fortextbox" name="categoryName" placeholder="Category Name" formControlName="categoryName">
-                        <br/>
+                            </div>
+                        </div>
+                        <div class="form-group">
 
-                        <input type="text" class="fortextbox" name="address" placeholder="Address" formControlName="address">
-                        <br/>
 
-                        <input type="submit" class="forsubmit" value="Save">
+                            <div class=" input-group-alternative">
+
+
+                                <input type="text" class="form-control" name="address" placeholder="Address" formControlName="address">
+
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-4">Save</button>
+                        <!-- <input type="submit" class="forsubmit" value="Save"> -->
                     </form>
                 </ng-template>
 
@@ -70,7 +80,7 @@
                                     {{item.createdAt}}
                                 </td>
                                 <td>
-                                    <a href="" style="margin-right: 10px;">Edit</a><span (click)="deleteCategory()">Delete</span>
+                                    <span class="upd-ed" (click)="updateCategory()">Update</span><span (click)="deleteCategory()">Delete</span>
                                 </td>
 
 

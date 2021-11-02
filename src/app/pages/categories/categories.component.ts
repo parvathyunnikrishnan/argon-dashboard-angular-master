@@ -40,7 +40,7 @@ export class CategoriesComponent implements OnInit {
   deleteCategory() {
     console.log(1)
     this.http
-    .put('http://157.245.100.86:8080/categories/delete-all', {})
+    .put('http://157.245.100.86:8080/categories/delete?Id=112', {Id: 112})
     .subscribe(
       (data: any) => {
         
@@ -73,6 +73,30 @@ export class CategoriesComponent implements OnInit {
       return  `with: ${reason}`;
     }
   }
+
+
+  updateCategory(content) {
+    
+    this.http
+    .put('http://157.245.100.86:8080/categories/update', {})
+    .subscribe(
+      (data: any) => {
+        this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((res) => {
+          this.closeModal = `Closed with: ${res}`;
+        }, (res) => {
+          this.closeModal = `Dismissed ${this.getDismissReason(res)}`;
+        });
+      },
+      error => {
+        
+      },
+      () => {
+        
+      }
+
+    );
+  }
+
   onClickSubmit(data){
     console.log(data)
     const datas = { categoryName: data.categoryName, address: data.address}

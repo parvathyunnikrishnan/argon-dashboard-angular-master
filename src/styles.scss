@@ -19,11 +19,18 @@
 
 .modal-content {
     width: 65% !important;
-    height: 263px !important;
+    height: 280px !important;
     left: 200px;
+    background-color: #f7fafc!important;
+    padding-left: 40px;
+    border-radius: 0rem !important;
 }
 
 form input {
     display: flex;
     margin-left: 35px;
+}
+
+.modal-header {
+    padding: 1.1rem;
 }
