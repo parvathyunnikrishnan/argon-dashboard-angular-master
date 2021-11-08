@@ -18,7 +18,11 @@ export class CategoriesComponent implements OnInit {
   ngOnInit() {
     this.formdata = new FormGroup({
       categoryName: new FormControl(""),
-      address: new FormControl("")
+      address: new FormControl(""),
+      description:new FormControl(""),
+      status:new FormControl(""),
+      image:new FormControl("")
+     
    });
     
     this.http
@@ -40,7 +44,7 @@ export class CategoriesComponent implements OnInit {
   deleteCategory() {
     console.log(1)
     this.http
-    .put('http://157.245.100.86:8080/categories/delete?Id=112', {Id: 112})
+    .put('http://157.245.100.86:8080/categories/delete?id=120', {Id: 120})
     .subscribe(
       (data: any) => {
         
@@ -56,12 +60,32 @@ export class CategoriesComponent implements OnInit {
 
     );
   }
-  triggerModal(content) {
+  triggerModal(content, modalType?: string) {
+    if(modalType) {
+      this.http
+      .get('http://157.245.100.86:8080/categories/get?id=112')
+      .subscribe(
+        (data: any) => {
+        // this.categories = data
+          console.log(data)
+        },
+        error => {
+          
+        },
+        () => {
+          // 'onCompleted' callback.
+          // No errors, route to new page here
+        }
+      );
+    }
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((res) => {
       this.closeModal = `Closed with: ${res}`;
     }, (res) => {
       this.closeModal = `Dismissed ${this.getDismissReason(res)}`;
     });
+
+   
+  
   }
 
   private getDismissReason(reason: any): string {
@@ -76,8 +100,7 @@ export class CategoriesComponent implements OnInit {
 
 
   updateCategory(content) {
-    
-    this.http
+     this.http
     .put('http://157.245.100.86:8080/categories/update', {})
     .subscribe(
       (data: any) => {
@@ -99,7 +122,8 @@ export class CategoriesComponent implements OnInit {
 
   onClickSubmit(data){
     console.log(data)
-    const datas = { categoryName: data.categoryName, address: data.address}
+    const datas = { categoryName: data.categoryName, address: data.address, description: data.description, status: data.status, image: data.image
+    }
     this.http.post('http://157.245.100.86:8080/categories/add', datas).subscribe(
       (status: any) => {
 

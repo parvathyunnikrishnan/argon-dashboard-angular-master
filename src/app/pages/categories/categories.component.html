@@ -23,22 +23,44 @@
                       </button>
                     </div>
                     <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+
+
                         <div class="form-group">
                             <div class=" input-group-alternative">
                                 <input type="text" class="form-control" name="categoryName" placeholder="Category Name" formControlName="categoryName">
-
                             </div>
                         </div>
+
                         <div class="form-group">
-
-
                             <div class=" input-group-alternative">
-
-
                                 <input type="text" class="form-control" name="address" placeholder="Address" formControlName="address">
-
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            <div class=" input-group-alternative">
+                                <input type="text" class="form-control" name="description" placeholder="Description" formControlName="description">
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <div class=" input-group-alternative">
+                                <input type="text" class="form-control" name="status" placeholder="Status" formControlName="status">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class=" input-group-alternative">
+                                <input type="text" class="form-control" name="image" placeholder="Image" formControlName="image">
+                            </div>
+                        </div>
+
+
+
+
+
                         <button type="submit" class="btn btn-primary mt-4">Save</button>
                         <!-- <input type="submit" class="forsubmit" value="Save"> -->
                     </form>
@@ -80,7 +102,7 @@
                                     {{item.createdAt}}
                                 </td>
                                 <td>
-                                    <span class="upd-ed" (click)="updateCategory()">Update</span><span (click)="deleteCategory()">Delete</span>
+                                    <span class="upd-ed" (click)="triggerModal(modalData, item.id)">Update</span><span (click)="deleteCategory()">Delete</span>
                                 </td>
 
 

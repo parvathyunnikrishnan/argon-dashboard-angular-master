@@ -1,0 +1,45 @@
+.fortextbox {
+    width: 234px;
+    height: 45px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.upd-ed {
+    margin-right: 10px;
+}
+
+.bg-secondary {
+    background-color: #f7fafc!important;
+}
+
+input-group-alternative {
+    transition: box-shadow .15s ease;
+    border: 0;
+    box-shadow: 0 1px 3px rgb(50 50 93 / 15%), 0 1px 0 rgb(0 0 0 / 2%);
+}
+
+.input-group {
+    border-radius: .375rem;
+}
+
+.form-control {
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
+.input-group-alternative {
+    width: 80% !important;
+}
+
+.mt-4,
+.my-4 {
+    margin-top: 0rem !important;
+}
+
+.ad-pop-alg {
+    display: flex;
+}
