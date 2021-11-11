@@ -34,3 +34,11 @@ form input {
 .modal-header {
     padding: 1.1rem;
 }
+
+.header.bg-gradient-danger {
+    // background-color: #55BBc9 !important;
+    // background: linear-gradient( 87deg, #55BBc9 0, #CAFAFE 100%) !important;
+    //background: linear-gradient( 87deg, #4E4E50 0, #4E4F57 100%) !important;
+    //background: linear-gradient( 87deg, #7048ba 0, #723653 100%) !important;
+    background: linear-gradient( 87deg, #296291 0, #2e8fc7 100%) !important;
+}

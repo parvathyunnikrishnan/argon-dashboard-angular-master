@@ -100,7 +100,7 @@ export class DietaryCategoriesComponent implements OnInit {
 
   updateDietaryCategory(content) {
      this.http
-    .put('http://157.245.100.86:8080/dietary-categories/update', {})
+    .put('http://157.245.100.86:8080/dietary-categories/update?id=126', {Id: 126})
     .subscribe(
       (data: any) => {
         this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((res) => {
