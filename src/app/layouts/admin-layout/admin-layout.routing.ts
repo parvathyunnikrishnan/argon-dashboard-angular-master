@@ -9,6 +9,8 @@ import { ChefsComponent } from '../../pages/chefs/chefs.component';
 import { ConfigurationsComponent } from '../../pages/configurations/configurations.component';
 import { AllergensComponent } from '../../pages/allergens/allergens.component';
 import {  DietaryCategoriesComponent } from '../../pages/dietary-categories/dietary-categories.component';
+import {  OrderViewComponent } from '../../pages/order-view/order-view.component';
+
 
 
 
@@ -24,6 +26,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'categories',           component: CategoriesComponent },
     { path: 'allergens',           component: AllergensComponent },
     { path: 'dietary-categories', component:  DietaryCategoriesComponent },
+    { path: 'order-view', component:  OrderViewComponent }
 
 
 ];

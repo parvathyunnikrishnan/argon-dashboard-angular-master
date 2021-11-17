@@ -15,6 +15,11 @@
 .text-muted {
     font-size: 12px;
     width: 106px;
+    color: black !important;
+}
+
+a {
+    color: black;
 }
 
 .icon {
@@ -24,6 +29,8 @@
 
 .card {
     height: 66px;
+    background-color: #e4ebef;
+    // background-color: #788287;
 }
 
 .alg {
@@ -53,7 +60,9 @@
     //background-color: rgb(42, 42, 99);
     //background-color: #7aa3e4;
     //background: rgb(182, 172, 172);
-    background-color: #172b4d;
+    //background-color: #172b4d;
+    //background-color: #2f4f6c;
+    background-color: #33375a;
     border-radius: 3px;
 }
 
@@ -71,4 +80,14 @@
 
 #clr-chg {
     background: gold !important;
+}
+
+.img-stl {
+    max-width: 100%;
+    height: auto;
+}
+
+.pb-8,
+.py-8 {
+    padding-bottom: 8rem !important;
 }

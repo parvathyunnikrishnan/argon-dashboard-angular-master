@@ -17,6 +17,7 @@ import { CategoriesComponent } from '../../pages/categories/categories.component
 import { DietaryCategoriesComponent } from '../../pages/dietary-categories/dietary-categories.component';
 import { ConfigurationsComponent } from '../../pages/configurations/configurations.component';
 import { AllergensComponent } from '../../pages/allergens/allergens.component';
+import {  OrderViewComponent } from '../../pages/order-view/order-view.component';
 
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -42,7 +43,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ConfigurationsComponent,
     DeliveryPartnersComponent,
     AllergensComponent,
-    DietaryCategoriesComponent
+    DietaryCategoriesComponent,
+    OrderViewComponent
   ]
 })
 
